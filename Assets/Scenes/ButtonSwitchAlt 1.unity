@@ -342,8 +342,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
+      - m_Target: {fileID: 1240666021}
+        m_TargetAssemblyTypeName: PopUpManager, Assembly-CSharp
         m_MethodName: restartGame
         m_Mode: 1
         m_Arguments:
@@ -544,8 +544,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
+      - m_Target: {fileID: 1240666021}
+        m_TargetAssemblyTypeName: PopUpManager, Assembly-CSharp
         m_MethodName: QuitGameOverkill
         m_Mode: 1
         m_Arguments:
@@ -901,7 +901,7 @@ GameObject:
   - component: {fileID: 931045461}
   - component: {fileID: 931045460}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: PopUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7310d110bc7339842aa3c1b743d7ad6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tryAgainPopup: {fileID: 0}
+  tryAgainPopup: {fileID: 931045458}
 --- !u!1 &1409407514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1436,8 +1436,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
+        - m_Target: {fileID: 1911397332}
+          m_TargetAssemblyTypeName: SwitchBarHandler, Assembly-CSharp
           m_MethodName: EnableSwitch
           m_Mode: 1
           m_Arguments:
@@ -1452,8 +1452,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
+        - m_Target: {fileID: 1911397332}
+          m_TargetAssemblyTypeName: SwitchBarHandler, Assembly-CSharp
           m_MethodName: DisableSwitch
           m_Mode: 1
           m_Arguments:
@@ -1885,6 +1885,7 @@ GameObject:
   - component: {fileID: 1911397330}
   - component: {fileID: 1911397329}
   - component: {fileID: 1911397331}
+  - component: {fileID: 1911397332}
   m_Layer: 5
   m_Name: SwitchBase
   m_TagString: Untagged
@@ -1968,9 +1969,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11500000, guid: fc3849db69d1aee479b7ec19c3010fa1, type: 3}
-          m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 1911397332}
+          m_TargetAssemblyTypeName: SwitchBarHandler, Assembly-CSharp
+          m_MethodName: EnableSwitch
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1984,9 +1985,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11500000, guid: fc3849db69d1aee479b7ec19c3010fa1, type: 3}
-          m_TargetAssemblyTypeName: MechanismManager, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 1911397332}
+          m_TargetAssemblyTypeName: SwitchBarHandler, Assembly-CSharp
+          m_MethodName: DisableSwitch
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1996,6 +1997,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &1911397332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911397327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3849db69d1aee479b7ec19c3010fa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchActivated: 0
+  switchIsActive: 0
+  switchBar: {fileID: 1409407516}
+  switchCounterText: {fileID: 1719503701}
 --- !u!1 &1954808424
 GameObject:
   m_ObjectHideFlags: 0
