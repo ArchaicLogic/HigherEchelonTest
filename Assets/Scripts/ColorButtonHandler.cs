@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class CollorButtonHandler : MonoBehaviour
+public class ColorButtonHandler : MonoBehaviour
 {
     [SerializeField] Button colorSwapButton;
     public delegate void ColorButtonPressed();

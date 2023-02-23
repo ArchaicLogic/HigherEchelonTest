@@ -15,7 +15,7 @@ public class RotationEngine : MonoBehaviour
     {
 
         SwitchBarHandler.OnSwitchThrown += SpinDirectionSwap;
-        CollorButtonHandler.OnColorButtonPressed += EngineOnOff;
+        ColorButtonHandler.OnColorButtonPressed += EngineOnOff;
     }
 
     // Update is called once per frame

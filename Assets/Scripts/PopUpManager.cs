@@ -11,7 +11,7 @@ public class PopUpManager : MonoBehaviour
     void Start()
     {
         SwitchBarHandler.OnSwitchThrown += InputCounter;
-        CollorButtonHandler.OnColorButtonPressed += InputCounter;
+        ColorButtonHandler.OnColorButtonPressed += InputCounter;
     }
 
     // Update is called once per frame
