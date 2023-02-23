@@ -51,7 +51,7 @@ public class SwitchBarHandler : MonoBehaviour
     }
     IEnumerator SwitchEngineTimer()
     {
-        OnSwitchThrown();
+        if (OnSwitchThrown != null) { OnSwitchThrown(); }
         switchIsActive = true;
         switchActivated = false;
         switchBar.transform.eulerAngles = new Vector3(0, 0, 135);

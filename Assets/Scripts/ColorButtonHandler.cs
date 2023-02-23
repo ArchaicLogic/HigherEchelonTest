@@ -17,8 +17,11 @@ public class ColorButtonHandler : MonoBehaviour
 
 
     public void ButtonPressed()
-    {
-        OnColorButtonPressed();
+    { 
+        if(OnColorButtonPressed!=null) {   OnColorButtonPressed(); }
+       
+     
+       
         buttonCounter++;
         buttonCounterText.text = buttonCounter.ToString();
       
